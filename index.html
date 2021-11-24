@@ -31,16 +31,16 @@
       if (this.hash !== "") {
         // Prevent default anchor click behavior
         event.preventDefault();
-
+    
         // Store hash
         var hash = this.hash;
-
+    
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 800, function(){
-
+    
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         });
@@ -92,7 +92,7 @@
       <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/Yunhe_new.jpg">
       <h1>Yunhe Wang</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am a senior researcher at <a href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>, Beijing, where I work on deep learning, model compression, and computer vision, etc. Before that, I did my PhD at school of EECS, <a href="https://www.pku.edu.cn/">Peking University</a>, where I was co-advised by Prof. <a href="https://dblp.org/pers/hd/x/Xu_0006:Chao">Chao Xu</a></a> and Prof. <a href="https://scholar.google.com.sg/citations?user=RwlJNLcAAAAJ">Dacheng Tao</a></a>. I did my bachelors at school of science, <a href="https://en.xidian.edu.cn/">Xidian University</a>.
+          I am a PhD Student at <a href="https://www.cuhk.edu.hk/">CUHK</a>, Hong Kong, where I am fortunately advised by Prof. Sibo Wang. My research interests include Database and Data Mining, etc. Before that, I got my bachelor degree at Software College, <a href="https://www.nankai.edu.cn/">Nankai University</a>.
         </p>
         <p class="w3-center">
           <a href="mailto:yunhe.wang@huawei.com">Email</a> &nbsp/&nbsp
@@ -116,7 +116,7 @@
       <p><li> 09/2020, six papers have been accepted by <a href="https://nips.cc/Conferences/2020">NeurIPS 2020</a>.</li></p>
       <p><li> 07/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
       <p><li> 07/2020, one paper has been accepted by <a href="https://eccv2020.eu/accepted-papers/">ECCV 2020</a>.</li></p>
-      
+
       <!--
       <p><li> 06/2020, two papers have been accepted by <a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</li></p>
       <p><li> 07/2020, one paper has been accepted by <a href="http://2020.acmmm.org/accepted-paper-id-list.txt">ACM MM 2020</a>.</li></p>
@@ -141,7 +141,7 @@
         <p class="w3-justify">
         I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
         </p> 
-
+    
         <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
         <img style="width:96%;" src="images/GhostNet.png"> 
         <p class="w3-justify">
@@ -150,7 +150,7 @@
         <p class="w3-justify">
         The initial verison of GhostNet was accepted by CVPR 2020, which achieved SOTA performance on ImageNet: <span style="color:red">75.7%</span> top1 acc with only <span style="color:red">226M FLOPS</span>. In the current version, we release a series computer vision models (e.g. int8 quantization, detection, and larger networks) on <strong>MindsSpore 1.0</strong> and <strong>Mate 30 Pro (Kirin 990)</strong>.
         </p> 
-
+    
         <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
         <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.gif">
         <p class="w3-justify">
@@ -161,7 +161,7 @@
         </p>  
 
   </div>
-  
+
   <!-- The Talks Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="talks">
     <h2>Talks</h2>
@@ -185,7 +185,7 @@
       <br>
       <em>ICML</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2105.05530.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>Distilling Object Detectors via Decoupled Features</strong>
       <br>
@@ -193,7 +193,7 @@
       <br>
       <em>CVPR</em> 2021
       </p>
-
+    
       <p>
       <li><strong>HourNAS: Extremely Fast Neural Architecture Search Through an Hourglass Lens</strong>
       <br>
@@ -203,7 +203,7 @@
       <br>
       <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2005.14446.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/HourNAS-F_v1.0_cifar10">MindSpore code</a>
       </p>
-
+    
       <p>
       <li><strong>Manifold Regularized Dynamic Network Pruning</strong>
       <br>
@@ -211,7 +211,7 @@
       <br>
       <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2103.05861.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/manidp_v1.0_cifar10">MindSpore code</a>
       </p>
-
+    
       <p>
       <li><strong>Learning Student Networks in the Wild</strong>
       <br>
@@ -219,7 +219,7 @@
       <br>
       <em>CVPR</em> 2021 
       </p>
-
+    
       <p>
       <li><strong>AdderSR: Towards Energy Efficient Image Super-Resolution</strong>
       <br>
@@ -227,7 +227,7 @@
       <br>
       <em>CVPR</em> 2021 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.08891.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a> | <span style="color:red"> Oral Presentation</span>
       </p>
-
+    
       <p>
       <li><strong>ReNAS: Relativistic Evaluation of Neural Architecture Search</strong>
       <br>
@@ -235,7 +235,7 @@
       <br>
       <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1910.01523.pdf">paper</a> | <span style="color:red"> Oral Presentation</span> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/renas_v1.0_cifar10">MindSpore code</a>
       </p>
-
+    
       <p>
       <li><strong>Pre-Trained Image Processing Transformer</strong>
       <br>
@@ -245,7 +245,7 @@
       <br>
       <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2012.00364.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/IPT">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Pretrained-IPT">Pytorch code</a>
       </p>
-
+    
       <p>
       <li><strong>Data-Free Knowledge Distillation For Image Super-Resolution</strong>
       <br>
@@ -253,7 +253,7 @@
       <br>
       <em>CVPR</em> 2021 
       </p>
-
+    
       <p>
       <li><strong>Positive-Unlabeled Data Purification in the Wild for Object Detection</strong>
       <br>
@@ -261,7 +261,7 @@
       <br>
       <em>CVPR</em> 2021 
       </p>
-
+    
       <p>
       <li><strong>One-shot Graph Neural Architecture Search with Dynamic Search Space</strong>
       <br>
@@ -269,7 +269,7 @@
       <br>
       <em>AAAI</em> 2021 
       </p>
-
+    
       <p>
       <li><strong>Adversarial Robustness through Disentangled Representations</strong>
       <br>
@@ -277,7 +277,7 @@
       <br>
       <em>AAAI</em> 2021 
       </p>
-
+    
       <p>
       <li><strong>Kernel Based Progressive Distillation for Adder Neural Networks</strong>
       <br>
@@ -285,7 +285,7 @@
       <br>
       <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.13044.pdf">paper</a> | <span style="color:red"> Spotlight</span> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a>
       </p>
-
+    
       <p>
       <li><strong>Model Rubik's Cube: Twisting Resolution, Depth and Width for TinyNets</strong>
       <br>
@@ -293,7 +293,7 @@
       <br>
       <em>NeurIPS</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2010.14819.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet">code</a> 
       </p>
-
+    
       <p>
       <li><strong>Residual Distillation: Towards Portable Deep Neural Networks without Shortcuts</strong>
       <br>
@@ -303,7 +303,7 @@
       <br>
       <em>NeurIPS</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2020/file/657b96f0592803e25a4f07166fff289a-Paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/leoozy/JointRD_Neurips2020">code</a> 
       </p>
-
+    
       <p>
       <li><strong>Searching for Low-Bit Weights in Quantized Neural Networks</strong>
       <br>
@@ -311,7 +311,7 @@
       <br>
       <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/abs/2009.08695.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.0/VGG-Small-low-bit_cifar10">code</a> 
       </p>
-
+    
       <p>
       <li><strong>SCOP: Scientific Control for Reliable Neural Network Pruning</strong>
       <br>
@@ -319,7 +319,7 @@
       <br>
       <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2010.10732">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?2593/noah-cvlab/gpu/1.0/resnet-0.65x_v1.0_oxford_pets">code</a>
       </p>
-
+    
       <p>
       <li><strong>Adapting Neural Architectures Between Domains</strong>
       <br>
@@ -327,7 +327,7 @@
       <br>
       <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://papers.nips.cc/paper/2020/file/08f38e0434442128fab5ead6217ca759-Paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/liyxi/AdaptNAS">code</a>
       </p>
-
+    
       <p>
       <li><strong>Discernible Image Compression</strong>
       <br>
@@ -351,14 +351,14 @@
       <br>
       <em>ICML</em> 2020 | <a style="color: #447ec9" href="https://proceedings.icml.cc/static/paper_files/icml/2020/181-Paper.pdf">paper</a>  
       </p>
-
+    
       <p>
       <li><strong>Neural Architecture Search in a Proxy Validation Loss Landscape</strong>
       <br>
       Yanxi Li, Minjing Dong, <strong>Yunhe Wang</strong>, Chang Xu
       <br>
       <em>ICML</em> 2020 | <a style="color: #447ec9" href="https://proceedings.icml.cc/static/paper_files/icml/2020/439-Paper.pdf">paper</a>
-
+    
       <p>
       <li><strong>On Positive-Unlabeled Classification in GAN</strong>
       <br>
@@ -366,7 +366,7 @@
       <br>
       <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_On_Positive-Unlabeled_Classification_in_GAN_CVPR_2020_paper.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>CARS: Continuous Evolution for Efficient Neural Architecture Search</strong>
       <br>
@@ -374,7 +374,7 @@
       <br>
       <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_CARS_Continuous_Evolution_for_Efficient_Neural_Architecture_Search_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/CARS">code</a> 
       </p>
-
+    
       <p>
       <li><strong>AdderNet: Do We Really Need Multiplications in Deep Learning?</strong>
       <br>
@@ -383,7 +383,7 @@
       <em>CVPR</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_AdderNet_Do_We_Really_Need_Multiplications_in_Deep_Learning_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a> | <span style="color:red"> Oral Presentation</span>
       <br>
       </p>
-
+    
       <p>
       <li><strong>A Semi-Supervised Assessor of Neural Architectures</strong>
       <br>
@@ -391,7 +391,7 @@
       <br>
       <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Tang_A_Semi-Supervised_Assessor_of_Neural_Architectures_CVPR_2020_paper.pdf">paper</a> 
       </p>
-
+    
       <p>
       <li><strong>Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection</strong>
       <br>
@@ -399,7 +399,7 @@
       <br>
       <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Hit-Detector_Hierarchical_Trinity_Architecture_Search_for_Object_Detection_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/ggjy/HitDet.pytorch">code</a>
       </p>
-
+    
       <p>
       <li><strong>Frequency Domain Compact 3D Convolutional Neural Networks</strong>
       <br>
@@ -407,7 +407,7 @@
       <br>
       <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Frequency_Domain_Compact_3D_Convolutional_Neural_Networks_CVPR_2020_paper.pdf">paper</a>
       </p>
-
+    
       <li><strong>GhostNet: More Features from Cheap Operations</strong>      
       <br>
       Kai Han, <strong>Yunhe Wang</strong>, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu
@@ -422,7 +422,7 @@
       <br>
       <em>AAAI</em> 2020 | <a style="color: #447ec9" href="data/2020 AAAI dropblock.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/disout">code</a>
       </p>
-
+    
       <p>
       <li><strong>DropNAS: Grouped Operation Dropout for Differentiable Architecture Search</strong>
       <br>
@@ -430,7 +430,7 @@
       <br>
       <em>IJCAI</em> 2020 | <a style="color: #447ec9" href="https://www.ijcai.org/Proceedings/2020/0322.pdf">paper</a> 
       </p>
-
+    
       <p>
       <li><strong>Distilling Portable Generative Adversarial Networks for Image Translation</strong>
       <br>
@@ -438,7 +438,7 @@
       <br>
       <em>AAAI</em> 2020 | <a style="color: #447ec9" href="data/2020 AAAI GAN Distillation.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>Efficient Residual Dense Block Search for Image Super-Resolution</strong>
       <br>
@@ -446,7 +446,7 @@
       <br>
       <em>AAAI</em>, 2020 | <a style="color: #447ec9" href="data/2020 AAAI SR NAS.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/vega">code</a>
       </p>
-
+    
       <p>
       <li><strong>Positive-Unlabeled Compression on the Cloud</strong>
       <br>
@@ -454,7 +454,7 @@
       <br>
       <em>NeurIPS</em> 2019 | <a style="color: #447ec9" href="data/2019 NIPS PU Compression.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Data-Efficient-Model-Compression/tree/master/pu_compress">code</a> | <a style="color: #447ec9" href="http://papers.nips.cc/paper/8525-positive-unlabeled-compression-on-the-cloud-supplemental.zip">supplement</a>
       </p>
-
+    
       <p>
       <li><strong>Data-Free Learning of Student Networks</strong>
       <br>
@@ -464,7 +464,7 @@
       <br>
       <em>ICCV</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCV DAFL.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Data-Efficient-Model-Compression/tree/master/DAFL">code</a>
       </p>
-
+    
       <p>
       <li><strong>Co-Evolutionary Compression for Unpaired Image Translation</strong>
       <br>
@@ -472,7 +472,7 @@
       <br>
       <em>ICCV</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCV Co-Evolution Pruning.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/GAN-pruning">code</a> 
       </p>
-
+    
       <p>
       <li><strong>Searching for Accurate Binary Neural Architectures</strong>
       <br>
@@ -480,7 +480,7 @@
       <br>
       <em>ICCV Neural Architectures Workshop</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCVw Bianry Search.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>LegoNet: Efficient Convolutional Neural Networks with Lego Filters</strong>
       <br>
@@ -488,7 +488,7 @@
       <br>
       <em>ICML</em> 2019 | <a style="color: #447ec9" href="data/2019 ICML LegoNet.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/LegoNet">code</a> 
       </p>
-
+    
       <p>
       <li><strong>Learning Instance-wise Sparsity for Accelerating Deep Models</strong>
       <br>
@@ -496,7 +496,7 @@
       <br>
       <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="data/2019 IJCAI Instance Sparsity.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>Attribute Aware Pooling for Pedestrian Attribute Recognition</strong>
       <br>
@@ -504,7 +504,7 @@
       <br>
       <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="https://www.ijcai.org/proceedings/2019/0341.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>Crafting Efficient Neural Graph of Large Entropy</strong>
       <br>
@@ -512,7 +512,7 @@
       <br>
       <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="data/2019 IJCAI Graph Pruning.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>Low Resolution Visual Recognition via Deep Feature Distillation</strong>
       <br>
@@ -520,7 +520,7 @@
       <br>
       <em>ICASSP</em> 2019 | <a style="color: #447ec9" href="data/2019 ICASSP LR Distillation.pdf">paper</a> 
       </p>
-
+    
       <p>
       <li><strong>Learning Versatile Filters for Efficient Convolutional Neural Networks</strong>
       <br>
@@ -528,7 +528,7 @@
       <br>
       <em>NeurIPS</em> 2018 | <a style="color: #447ec9" href="data/2018 NIPS Versatile Filter.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Versatile-Filters">code</a> | <a style="color: #447ec9" href="https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks-supplemental.zip">supplement</a> 
       </p>
-
+    
       <p>
       <li><strong>Towards Evolutionary Compression</strong>
       <br>
@@ -536,7 +536,7 @@
       <br>
       <em>SIGKDD</em> 2018 | <a style="color: #447ec9" href="data/2018 KDD GA pruning.pdf">paper</a> 
       </p>
-
+    
       <p>
       <li><strong>Autoencoder Inspired Unsupervised Feature Selection</strong>
       <br>
@@ -544,7 +544,7 @@
       <br>
       <em>ICASSP</em> 2018 | <a style="color: #447ec9" href="data/2018 ICASSP Feature Selector.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/NoahLuffy/AEFS">code</a> 
       </p>
-
+    
       <p>
       <li><strong>Adversarial Learning of Portable Student Networks</strong>
       <br>
@@ -552,7 +552,7 @@
       <br>
       <em>AAAI</em> 2018 | <a style="color: #447ec9" href="data/2018 AAAI Adversarial Distillation.pdf">paper</a> 
       </p>
-
+    
       <p>
       <li><strong>Beyond Filters: Compact Feature Map for Portable Deep Model</strong>
       <br>
@@ -560,7 +560,7 @@
       <br>
       <em>ICML</em> 2017 | <a style="color: #447ec9" href="data/2017 ICML Beyond Filters.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/YunheWang/RedCNN">code</a> | <a style="color: #447ec9" href="http://proceedings.mlr.press/v70/wang17m/wang17m-supp.zip">supplement</a>
       </p>
-
+    
       <p>
       <li><strong>Beyond RPCA: Flattening Complex Noise in the Frequency Domain</strong>
       <br>
@@ -568,7 +568,7 @@
       <br>
       <em>AAAI</em> 2017 | <a style="color: #447ec9" href="data/2017 AAAI Beyond RPCA.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>Privileged Multi-Label Learning</strong>
       <br>
@@ -576,7 +576,7 @@
       <br>
       <em>IJCAI</em> 2017 | <a style="color: #447ec9" href="data/2017 IJCAI Privileged.pdf">paper</a> 
       </p>
-
+    
       <p>
       <li><strong>CNNpack: Packing Convolutional Neural Networks in the Frequency Domain</strong>
       <br>
@@ -584,13 +584,13 @@
       <br>
       <em>NeurIPS</em> 2016 | <a style="color: #447ec9" href="data/2016 NIPS CNNpack.pdf">paper</a> | <a style="color: #447ec9" href="https://papers.nips.cc/paper/6390-cnnpack-packing-convolutional-neural-networks-in-the-frequency-domain-supplemental.zip">supplement</a> 
       </p>
-
+    
       </ol>
-
+    
       <h4> Journal Papers:</h4>
-
+    
       <ol>
-
+    
       <p>
       <li><strong>Adversarial Recurrent Time Series Imputation</strong>
       <br>
@@ -598,7 +598,7 @@
       <br>
       <em>IEEE TNNLS</em> 2020 |<a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9158560">paper</a>
       </p>
-  
+      
       <p>
       <li><strong>Learning Student Networks via Feature Embedding</strong>
       <br>
@@ -606,7 +606,7 @@
       <br>
       <em>IEEE TNNLS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1812.06597">paper</a>
       </p>
-
+    
       <p>
       <li><strong>Packing Convolutional Neural Networks in the Frequency Domain</strong>
       <br>
@@ -614,7 +614,7 @@
       <br>
       <em>IEEE TPAMI</em> 2018 | <a style="color: #447ec9" href="data/2018 PAMI CNNpack.pdf">paper</a>
       </p>
-
+    
       <p>
       <li><strong>DCT Regularized Extreme Visual Recovery</strong>
       <br>
@@ -622,7 +622,7 @@
       <br>
       <em>IEEE TIP</em> 2017 | <a style="color: #447ec9" href="data/2017 TIP DCT norm.pdf">paper</a> 
       </p>
-
+    
       <p>
       <li><strong>DCT Inspired Feature Transform for Image Retrieval and Reconstruction</strong>
       <br>
@@ -630,9 +630,9 @@
       <br>
       <em>IEEE TIP</em> 2016 | <a style="color: #447ec9" href="data/2016 TIP DCT feature.pdf">paper</a>
       </p>
-
+    
       </ol>
-
+    
     </p>
   </div>
 
@@ -705,7 +705,7 @@ function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
- 
+
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
